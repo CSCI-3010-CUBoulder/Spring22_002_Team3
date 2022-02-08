@@ -1,4 +1,4 @@
 language: cpp
 script:
-  - g++ functions_to_implement.cpp
-  - ./a.out
+  - g++ -std=c++17 -Wall test.cpp -o test
+  - ./test
