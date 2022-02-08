@@ -53,18 +53,14 @@ string Join(vector<string> pieces, string glue) {
 // takes two vectors of integers, a and b. The function then removes elements from a if they are also in b.
 // If the integer is in b, but not in a, nothing happens.
 vector<int> MatchVectors(vector<int> a, vector<int> b) {
-}
-
- vector<int> MatchVectors( vector<int> a,  vector<int> b) {
-    for (int i = 0; i < a.size(); i++) {
-        for (int j = 0; j < b.size(); j++) {
-            if (a[i] == b[j]) {
-                a.erase(a.begin() + i);
-            }
-            
-        }
+  for (int i = 0; i < a.size(); i++) {
+    for (int j = 0; j < b.size(); j++) {
+      if (a[i] == b[j]) {
+        a.erase(a.begin() + i);
+      }
     }
- }
+  }
+}
 
 // divides an input integer by 2 until it is impossible to do so, then returns the final number.
 // (16 = 2 * 2 * 2 * 2 * 1 -> 1, 7 -> 7, 26 = 2 * 13 -> 13, 52 = 2 * 2 * 13 -> 13)
