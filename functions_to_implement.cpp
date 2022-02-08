@@ -175,3 +175,7 @@ vector<int> SubtractN(vector<int>, int n);
 
 // subtracts n to each element of the vector
 vector<double> SubtractN( vector<double>, double n);
+
+int main() {
+  return 0;
+}
