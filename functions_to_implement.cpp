@@ -79,7 +79,14 @@ int Sum(vector<int> nums) {
 }
 
 // Multiplies all numbers in a vector together and returns the resulting value
-int Product(vector<int> nums);
+int Product(vector<int> nums) {
+  int output = 0;
+  int size = nums.size();
+  for (int i = 0; i < size; i++) {
+    output *= nums[i];
+  }
+  return output;
+}
 
 // Adds an integer n to each element of a given vector
 vector<int> VectorPlusN(vector<int> v, int n);
