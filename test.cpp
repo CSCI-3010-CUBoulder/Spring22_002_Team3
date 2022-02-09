@@ -2,7 +2,7 @@
 #include "catch.hpp"
 #include "functions_to_implement.cpp"
 
-TEST_CASE ( "Removing substring", "[RemoveAllSubstrings]" ) {
-    REQUIRE( RemoveAllSubstrings("Bananaaa", "na"));
-    REQUIRE( RemoveAllSubstrings("Panama", "na"));
+TEST_CASE("Removing substring", "[RemoveAllSubstrings]") {
+  REQUIRE(RemoveAllSubstrings("Bananaaa", "na"));
+  REQUIRE(RemoveAllSubstrings("Panama", "na"));
 }
