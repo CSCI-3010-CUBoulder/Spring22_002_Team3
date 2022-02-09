@@ -110,23 +110,23 @@ vector<int> SquaresUntil(int n);
 
 // takes an int, n, and returns the nth value of the fibonacci sequence (1, 1, 2, 3, 5, 8, 13, ...)
 int NthFibonacci(int n) {
-    if(n == 0 || n == 1) return 1;
-    return NthFibonacci(n-1) + NthFibonacci(n-2);
+  if (n == 0 || n == 1) return 1;
+  return NthFibonacci(n - 1) + NthFibonacci(n - 2);
 }
 
 // takes an int, n, and returns the factorial of that int (n!)
 int Factorial(int n) {
-    if(n < 1) return 1;
-    return n * Factorial(n - 1);
+  if (n < 1) return 1;
+  return n * Factorial(n - 1);
 }
 
 // returns -1 if the number is negative and 1 if positive
 int Sign(int num) {
-	if (num < 0) {
-		return -1;
-	} else {
-		return 1;
-	}
+  if (num < 0) {
+    return -1;
+  } else {
+    return 1;
+  }
 };
 
 // takes two vectors of doubles, a and b. The function then removes elements from a if they are also in b.
@@ -180,8 +180,4 @@ vector<string> AddN(vector<string>, string n);
 vector<int> SubtractN(vector<int>, int n);
 
 // subtracts n to each element of the vector
-vector<double> SubtractN( vector<double>, double n);
-
-int main() {
-  return 0;
-}
+vector<double> SubtractN(vector<double>, double n);
